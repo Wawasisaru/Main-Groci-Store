@@ -1,0 +1,107 @@
+/* Text in the body */
+h1{
+    color:  #F28705;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    /* border-bottom:2px solid #F27507 ; */
+}
+p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+}
+h2{
+    color:   #034001;
+    text-align: center;
+    font-size: 35px;
+}
+/* search icon */
+#search-section {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+#search-input {
+  flex: 1;
+  padding: 5px;
+  border: 2px solid #a85207;
+  outline: none;
+  font-size: 16px;
+}
+
+#search-button {
+  padding: 9px 11px;
+  background-color:#a85207;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+/* end of search icons */
+/* Vegetables layout */
+.vegetables{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Vegetables layout two */
+.vegetables-raw-two{
+    display: flex;
+    justify-content: space-around;
+}
+h4{
+    text-align: center;
+    color: #a85207;
+    border-bottom:3px solid #a85207;
+}
+/* fruits layot one */
+.fruits{
+    display: flex;
+    justify-content: space-evenly;
+}
+#fruit-second{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* .bananaImage {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  /* opacity: 0.7; */
+
+.card {
+  box-shadow: 2px 0px 11px 0px rgba(0, 0, 0, 0.75);
+  width: 20%;
+  height: 40%;
+  border-radius: 7px;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.btn {
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 7px;
+  cursor:pointer;
+}
+.orderBtn {
+  background-color: #034001;
+}
+.cartBtn {
+  background-color:  #a75106;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+}
