@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#homepage{
+    background-image: url("https://res.cloudinary.com/djz4lxe3f/image/upload/v1684274905/Hotel-booking/flat-lay-healthy-vegetables-frame_nacjl6.jpg");
+    /* background-position: 100%; */
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: rgba(10, 1, 1, 0.7); */
+    background-color:#2f4e00;
+    font-weight: bold;
+    color: whitesmoke;
+    text-decoration: none;
+ }
+ ul li {
+     display: inline-block;
+     margin-left: 40px;
+     /* text-decoration: none; */
+ }
+ a {
+    text-decoration: none;
+    /* text-shadow: chartreuse;
+     */
+     color:whitesmoke;
+     font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+ }
+ /* End of navigation bar */
+ /* Start of the homepage styling */
+ #home{
+    font-weight: bold;
+    color: #CE5B13;
+    margin-left: 30px;
+ }
+ #Groci{
+    color: #CE5B13;
+    font-size: 65px;
+    text-align: center;
+    padding-top: 20%;
+ }
+ /* Button section in home */
+.btnContainer{
+        padding: 18px 18px;
+        border:3px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 20px;
+      }
+.start {
+        /* border: 1px solid rgb(250, 142, 19); */
+        color:whitesmoke;
+        background-color: #2F4E00;
+        padding: 18px 45px;
+        font-size: 20px;
+        border-radius: 10px;
+ }
+ 
