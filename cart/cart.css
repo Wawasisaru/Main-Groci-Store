@@ -1,0 +1,210 @@
+Text in the body */
+h1{
+    color:  #F28705;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    /* border-bottom:2px solid #F27507 ; */
+}
+p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+}
+
+h2{
+    color:   #034001;
+    text-align: center;
+    font-size: 35px;
+}
+/* search icon */
+#search-section {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+#search-input {
+  flex: 1;
+  padding: 5px;
+  border: 2px solid #A85207;
+  outline: none;
+  font-size: 16px;
+}
+#search-button {
+  padding: 9px 11px;
+  background-color:#a85207;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+/* end of search icons */
+/* Vegetables layout */
+.vegetables{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Vegetables layout two */
+.vegetables-raw-two{
+    display: flex;
+    justify-content: space-around;
+}
+h4{
+    text-align: center;
+    color: #A85207;
+    border-bottom:3px solid #A85207;
+}
+/* fruits layot one */
+.fruits{
+    display: flex;
+    justify-content: space-evenly;
+}
+#fruit-second{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* .bananaImage {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  /* opacity: 0.7; */
+.card {
+  box-shadow: 2px 0px 11px 0px rgba(0, 0, 0, 0.75);
+  width: 60%;
+  height: 40%;
+  border-radius: 7px;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.btn {
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 7px;
+  cursor:pointer;
+}
+.orderBtn {
+  background-color: #034001;
+}
+.cartBtn {
+  background-color:  #A75106;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.bananaImage{
+    width: 90%;
+}
+.clasify{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+}
+.bananaImage1{
+    width: 40%;
+}
+.bananaImage2{
+    width: 70%;
+}
+.bananaImage3{
+    width: 80%;
+}
+.bananaImage4{
+    width: 60%;
+}
+.fruit{
+    text-align: center;
+    color: #034001;
+}
+.bananaImages{
+    width: 30%;
+}
+.lists{
+    position: fixed;
+    background-color: rgb(187, 189, 190);
+    height: 150vh;
+    left: calc(150% - 550%);
+    width: 550px;
+    transition: 0.5s;
+    top: 0%;
+}
+.check{
+    padding: 14px 40px;
+    background-color: #034001;
+    color: white;
+    border-radius: 1em;
+    font-size: 1em;
+}
+.proceed{
+    text-align: center;
+}
+::after{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.cart-box{
+  width: 26%;
+  position: absolute;
+  left: 82%;
+  top: 25%;
+  border: solid 3px darkgreen;
+  height: 50%;
+}
+header{
+  display: flex;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  height: 12vh;
+  background-color: #A75106;
+  justify-content: space-between;
+  align-items: center;
+}
+h2{
+  font-size: x-large;
+  padding: 15px 10px;
+}
+.cart-wraper{
+  overflow-y: auto;
+  max-height: 340px;
+}
+.subtotal{
+  text-align: right;
+  padding: 5%;
+}
+.checkout, .view-cart{
+  width: 90%;
+  text-align: center;
+  cursor: pointer;
+  background-color: #A75106;
+  font-size: large;
+  color: white;
+  margin: auto;
+  padding: 10px 8px;
+}
+.view-cart{
+  background-color: white;
+  border: 2px solid #A75106;
+  color: #A75106;
+}
+/* .cart-icon{
+  text-align: right
+} */
+.cart-item{
+  display: grid;
+  grid-template-columns: 3fr, 6fr, 1fr;
+  padding: 5% 2%;
+  border-bottom: solid 1px #A75106;
+}
