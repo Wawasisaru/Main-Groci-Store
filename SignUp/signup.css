@@ -3,7 +3,7 @@
     padding:0;
   }
   body{
-    background-image: url("./image/front-view-vegetable.jpg");
+    background-image: url("../image/front-view-vegetable.jpg");
     /* border: 2px solid red; */
     /* min-height: 100vh; */
     display: flex;
