@@ -97,9 +97,11 @@ body {
 }
 .orderBtn {
   background-color: #034001;
+  text-decoration: none;
 }
 .cartBtn {
   background-color:  #a75106;
+  text-decoration: none;
 }
 .btnContainer {
   display: flex;
