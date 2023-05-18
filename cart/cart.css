@@ -103,6 +103,12 @@ body {
 .btnContainer {
   display: flex;
   justify-content: space-between;
+  /* text-decoration: none; */
+}
+h1{
+  font-size: 40px;
+  color:#034001;
+  padding-top: 40px;
 }
 .bananaImage{
     width: 90%;
@@ -145,6 +151,7 @@ body {
     color: white;
     border-radius: 1em;
     font-size: 1em;
+    text-decoration: none;
 }
 .proceed{
     text-align: center;

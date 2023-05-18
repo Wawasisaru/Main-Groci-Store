@@ -79,6 +79,7 @@ body {
     color: white;
     padding: 15px 40px;
     border: none;
+    text-decoration: none;
 
     border-radius: 10px;
     /* cursor: pointer; */

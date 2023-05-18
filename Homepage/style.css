@@ -50,13 +50,14 @@ nav{
  }
  /* Button section in home */
 .btnContainer{
-        padding: 18px 18px;
+        /* padding: 18px 18px; */
         border:3px;
         border-radius: 10px;
         font-size: 1.2rem;
         text-align: center;
         padding-top: 60px;
         font-size: 20px;
+        
       }
 .start {
         /* border: 1px solid rgb(250, 142, 19); */
@@ -64,6 +65,7 @@ nav{
         background-color: #2F4E00;
         padding: 18px 45px;
         font-size: 20px;
+        /* border: 2px solid red; */
         border-radius: 10px;
  }
  
