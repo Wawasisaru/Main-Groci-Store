@@ -1,391 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../cart/cart.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="./cart.css">
-    <script src="https://kit.fontawesome.com/06a2fefce6.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
-
-  <h1 class="fruit">Fruits</h1> 
-
-
-  <!-- <header>
-
-    <h1>Shopping Cart</h1> -->
-    <!-- <br>
-
-    <h1 class="fruit">Fruits</h1> -->
-
-    <!-- <div class="cart-box">
-
-      <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
-      <div class="whole-cart-window">
-
-        <h2>Shopping Bag</h2>
-
-        <div class="cart-wraper">
-
-          <div class="cart-item">
-
-          </div>
-
+  </head>
+  <body>
+    <h1 id="text-cart">My Shopping Cart</h1>
+    <!-- <div class="container">
+        <div class="products">
+          <div class="product">
+            <div class="card">
+                <div class="card-header">
+                  <img
+                    class="bananaImage"
+                    src="https://res.cloudinary.com/djz4lxe3f/image/upload/c_scale,h_180,w_180/v1684248165/Hotel-booking/pineapple-fruit_cahccw.jpg"
+                    alt="avacado"
+                  />
+                </div>
+                <div class="card-body">
+                  <h4>Pinnapple</h4>
+                  <p>Price: Ksh 100</p>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="subtotal"> Subtotal sh 0.00</div>
-        <div class="checkout">Checkout</div>
-        <br>
-        <div class="view-cart">View Cart</div>
 
+        <div class="container">
+          <div class="products">
+            <div class="product">
+              <div class="card">
+                  <div class="card-header">
+                    <img
+                      class="bananaImage"
+                      src="https://res.cloudinary.com/djz4lxe3f/image/upload/c_scale,h_180,w_180/v1684278593/Hotel-booking/delicious-potatoes-white-background_bf5a3y.jpg"
+                      alt="avacado"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4>Potatoes</h4>
+                    <p>Price: Ksh 50</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="container">
+            <div class="products">
+              <div class="product">
+                <div class="card">
+                    <div class="card-header">
+                      <img
+                        class="bananaImage"
+                        src="https://res.cloudinary.com/djz4lxe3f/image/upload/c_scale,h_180,w_180/v1684278592/Hotel-booking/fresh-broccoli-isolated_xfsfc6.jpg"
+                        alt="avacado"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h4>Brocoli</h4>
+                      <p>Price: Ksh 60</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="container">
+            <form id="cart-form">
+              <h2>Shopping cart</h2>
+              <div class="form-group">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" required>
+              </div>
+              <div class="form-group">
+                <label for="item-price">Item Price:</label>
+                <input type="number" id="item-price" min="0" step="0.01" required>
+              </div>
+              <button type="submit">Add Item</button>
+            </form>
+            <ul id="item-list"></ul>
+            <div id="total"></div>
+          </div>
+        </div> -->
+    <div class="mainContainer">
+      <div class="productContainer">
+        <div class="product">
+          <div class="card">
+            <div class="card-header">
+              <img
+                class="bananaImage"
+                src="https://res.cloudinary.com/djz4lxe3f/image/upload/c_scale,h_180,w_180/v1684278592/Hotel-booking/fresh-broccoli-isolated_xfsfc6.jpg"
+                alt="avacado"
+              />
+            </div>
+            <div class="card-body">
+              <h4>Brocoli</h4>
+              <p>Price: Ksh 60</p>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card">
+            <div class="card-header">
+              <img
+                class="bananaImage"
+                src="https://res.cloudinary.com/djz4lxe3f/image/upload/c_scale,h_180,w_180/v1684248165/Hotel-booking/pineapple-fruit_cahccw.jpg"
+                alt="avacado"
+              />
+            </div>
+            <div class="card-body">
+              <h4>Pinneapple</h4>
+              <p>Price: Ksh 100</p>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card">
+            <div class="card-header">
+              <img
+                class="bananaImage"
+                src="https://res.cloudinary.com/djz4lxe3f/image/upload/c_scale,h_180,w_180/v1684278593/Hotel-booking/delicious-potatoes-white-background_bf5a3y.jpg"
+                alt="avacado"
+              />
+            </div>
+            <div class="card-body">
+              <h4>Potatoes</h4>
+              <p>Price: Ksh 50</p>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <form>
+        <h2>Shopping cart</h2>
+        <div class="form-group">
+          <label for="item-name">Item Name:</label>
+          <input type="text" id="item-name" required />
+        </div>
+        <div class="form-group">
+          <label for="item-price">Item Price:</label>
+          <input type="number" id="item-price" min="0" step="0.01" required />
+        </div>
+        <button type="submit">Add Item</button>
+      </form>
+      <div class="orderNowSection">
+        <a href="../products/product.html">Go Back</a>
+        <a href="../Payment/pay/pay.html">Order Now</a>
+      </div>
     </div>
-
-  </header> -->
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-<!-- 
-<section class="clasify">
-
-
-    <div class="card">
-        <div class="card-header">
-
-            <img src="/Images/apple.jpg" alt="" class="bananaImage">
-
-         
-        </div>
-        <div class="card-body">
-          <h4>Apple</h4>
-          <p>Price: Ksh 120</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="/Images/avocado.jpg" alt="" class="bananaImage1">
-
-         
-        </div>
-        <br>
-          <br>
-          <br>
-        <div class="card-body">
-          <h4>Avocado</h4>
-          <p>Price: Ksh 30</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="/Images/gragon fruit.jpg" alt="" class="bananaImage">
-
-         
-        </div>
-        <div class="card-body">
-          <h4>Dragon fruit</h4>
-          <p>Price: Ksh 120</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="/Images/kiwi.png" alt="" class="bananaImage2">
-
-         
-        </div>
-        <div class="card-body">
-          <h4>Kiwi</h4>
-          <p>Price: Ksh 340</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-    </section> -->
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <section class="clasify">
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/mango.jpeg" alt="" class="bananaImage">
-
-         
-        </div>
-        <div class="card-body">
-          <h4>Mango</h4>
-          <p>Price: Ksh 50</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/oranges.jpg" alt="" class="bananaImage">
-
-         
-        </div>
-        <div class="card-body">
-          <h4>Oranges</h4>
-          <p>Price: Ksh 50</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/strawberries.jpg" alt="" class="bananaImage3">
-
-         
-        </div>
-        <div class="card-body">
-          <h4>Pineapples</h4>
-          <p>Price: Ksh 100</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/watermelon.jpg" alt="" class="bananaImage4">
-
-         
-        </div>
-        <div class="card-body">
-          <h4>watermelon</h4>
-          <p>Price: Ksh 150</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <h1 class="fruits">Vegetables</h1>
-
-      <br>
-      <br>
-      <br>
-<section class="clasify">
-
-    <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/brocolli.jpeg" alt="" class="bananaImage4">
-
-        </div>
-        <div class="card-body">
-          <h4>Broccoli</h4>
-          <p>Price: Ksh 140</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/cabbage.jpg" alt="" class="bananaImage4">
-            
-        </div>
-        <div class="card-body">
-          <h4>cabbage</h4>
-          <p>Price: Ksh 100</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/cucumber.jpg" alt="" class="bananaImage4">
-            
-        </div>
-        <div class="card-body">
-          <h4>Cucumber</h4>
-          <p>Price: Ksh 120</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/skumawiki.jpg" alt="" class="bananaImage4">
-            
-        </div>
-        <div class="card-body">
-          <h4>Skumawiki</h4>
-          <p>Price: Ksh 90</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-
-</section>  
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-<!-- <section class="clasify">
-
-    <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/spinach.jpg" alt="" class="bananaImage4">
-            
-        </div>
-        <div class="card-body">
-          <h4>Spinach</h4>
-          <p>Price: Ksh 90</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="/Images/capsicums.png" alt="" class="bananaImage4">
-            
-        </div>
-        <div class="card-body">
-          <h4>Capsicums</h4>
-          <p>Price: Ksh 100</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/irish.jpg" alt="" class="bananaImage4">
-            
-        </div>
-        <div class="card-body">
-          <h4>Irish</h4>
-          <p>Price: Ksh 200</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card">
-        <div class="card-header">
-
-            <img src="./Images/onions.jpg" alt="" class="bananaImage4">
-            
-        </div>
-        <div class="card-body">
-          <h4>Onions</h4>
-          <p>Price: Ksh 90</p>
-          <div class="btnContainer">
-            <button class="btn cartBtn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-</section> -->
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<div class="proceed">
-  <a href="../Payment/pay/pay.html"class="check">Payment</a>
-  <br>
-  <br>
-  <br>
-  <br>
-  <a href="../products/product.html" class="check">Back</a>
-</div>
-   
-
-</body>
+  </body>
 </html>
