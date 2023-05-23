@@ -16,6 +16,8 @@ h2 {
   margin: 0;
 }
 
+
+
 .products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -50,26 +52,6 @@ button {
   padding: 10px 18px;
   background-color: #034001;
 }
-/* .btn {
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 7px;
-  cursor:pointer;
-}
-.cartBtn {
-  background-color:  #a75106;
-  text-decoration: none;
-}
-.btnContainer{
-  /* padding: 18px 18px; */
-/* border:3px;
-  border-radius: 10px;
-  font-size: 1.2rem;
-  text-align: center;
-  padding-top: 60px;
-  font-size: 20px; */
 .mainContainer {
   display: flex;
   flex-direction: column;
@@ -115,4 +97,42 @@ form input {
   text-decoration: none;
   width:20%;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .mainContainer {
+    padding: 10px;
+  }
+
+  .productContainer {
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .orderNowSection {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .orderNowSection a {
+    width: 100%;
+  }
 }
