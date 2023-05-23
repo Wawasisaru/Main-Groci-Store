@@ -1,92 +1,56 @@
-Text in the body */
-h1{
-    color:  #F28705;
-    font-size: 45px;
-    font-weight: bold;
-    text-align: center;
-    /* border-bottom:2px solid #F27507 ; */
-}
-p{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 30px;
-}
-
-h2{
-    color:   #034001;
-    text-align: center;
-    font-size: 35px;
-}
-/* search icon */
-#search-section {
-  display: flex;
-  align-items: center;
-  max-width: 400px;
+/* Style the container */
+.container {
+  max-width: 800px;
   margin: 0 auto;
   padding: 10px;
-  background-color: #fff;
-  border-radius: 5px;
-}
-#search-input {
-  flex: 1;
-  padding: 5px;
-  border: 2px solid #A85207;
-  outline: none;
-  font-size: 16px;
-}
-#search-button {
-  padding: 9px 11px;
-  background-color:#a85207;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-/* end of search icons */
-/* Vegetables layout */
-.vegetables{
-    display: flex;
-    justify-content: space-evenly;
-}
-/* Vegetables layout two */
-.vegetables-raw-two{
-    display: flex;
-    justify-content: space-around;
-}
-h4{
-    text-align: center;
-    color: #A85207;
-    border-bottom:3px solid #A85207;
-}
-/* fruits layot one */
-.fruits{
-    display: flex;
-    justify-content: space-evenly;
-}
-#fruit-second{
   display: flex;
   justify-content: space-around;
-  padding-top: 40px;
 }
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+#text-cart {
+  color: #034001;
+  text-align: center;
 }
-/* .bananaImage {
-  max-width: 100%;
-  width: 300px;
-  height: 300px;
-  /* opacity: 0.7; */
-.card {
-  box-shadow: 2px 0px 11px 0px rgba(0, 0, 0, 0.75);
-  width: 60%;
-  height: 40%;
-  border-radius: 7px;
-  padding: 10px;
-  transition: transform 0.2s;
+
+h1,
+h2 {
+  margin: 0;
 }
-.card:hover {
-  transform: scale(1.1);
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border: 2px solid red;
 }
-.btn {
+
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  width: 25%;
+}
+
+.cart {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.cart-items {
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.total {
+  font-weight: bold;
+}
+button {
+  /* padding-top: 40px; */
+  padding: 10px 18px;
+  background-color: #034001;
+}
+/* .btn {
   border: none;
   color: #fff;
   font-weight: bold;
@@ -94,124 +58,61 @@ body {
   border-radius: 7px;
   cursor:pointer;
 }
-.orderBtn {
-  background-color: #034001;
-}
 .cartBtn {
-  background-color:  #A75106;
+  background-color:  #a75106;
+  text-decoration: none;
 }
-.btnContainer {
-  display: flex;
-  justify-content: space-between;
-  /* text-decoration: none; */
-}
-h1{
-  font-size: 40px;
-  color:#034001;
-  padding-top: 40px;
-}
-.bananaImage{
-    width: 90%;
-}
-.clasify{
-    display: grid;
-    grid-template-columns: repeat(4, 4fr);
-}
-.bananaImage1{
-    width: 40%;
-}
-.bananaImage2{
-    width: 70%;
-}
-.bananaImage3{
-    width: 80%;
-}
-.bananaImage4{
-    width: 60%;
-}
-.fruit{
-    text-align: center;
-    color: #034001;
-}
-.bananaImages{
-    width: 30%;
-}
-.lists{
-    position: fixed;
-    background-color: rgb(187, 189, 190);
-    height: 150vh;
-    left: calc(150% - 550%);
-    width: 550px;
-    transition: 0.5s;
-    top: 0%;
-}
-.check{
-    padding: 14px 40px;
-    background-color: #034001;
-    color: white;
-    border-radius: 1em;
-    font-size: 1em;
-    text-decoration: none;
-}
-.proceed{
-    text-align: center;
-}
-::after{
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-.cart-box{
-  width: 26%;
-  position: absolute;
-  left: 82%;
-  top: 25%;
-  border: solid 3px darkgreen;
-  height: 50%;
-}
-header{
-  display: flex;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  height: 12vh;
-  background-color: #A75106;
-  justify-content: space-between;
-  align-items: center;
-}
-h2{
-  font-size: x-large;
-  padding: 15px 10px;
-}
-.cart-wraper{
-  overflow-y: auto;
-  max-height: 340px;
-}
-.subtotal{
-  text-align: right;
-  padding: 5%;
-}
-.checkout, .view-cart{
-  width: 90%;
+.btnContainer{
+  /* padding: 18px 18px; */
+/* border:3px;
+  border-radius: 10px;
+  font-size: 1.2rem;
   text-align: center;
-  cursor: pointer;
-  background-color: #A75106;
-  font-size: large;
-  color: white;
-  margin: auto;
-  padding: 10px 8px;
+  padding-top: 60px;
+  font-size: 20px; */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.view-cart{
-  background-color: white;
-  border: 2px solid #A75106;
-  color: #A75106;
+.productContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
 }
-/* .cart-icon{
-  text-align: right
-} */
-.cart-item{
-  display: grid;
-  grid-template-columns: 3fr, 6fr, 1fr;
-  padding: 5% 2%;
-  border-bottom: solid 1px #A75106;
+form {
+  align-self: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+form button {
+  border-radius: 7px;
+  color: #fff;
+}
+form > * {
+  margin-bottom: 7px;
+  font-size: 1.3rem;
+}
+form input {
+  padding: 5px;
+}
+.orderNowSection {
+  align-self: center;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.orderNowSection a {
+  background-color: #cf6521;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  padding: 15px;
+  text-decoration: none;
+  width:20%;
+  text-align: center;
 }
