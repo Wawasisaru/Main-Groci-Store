@@ -1,23 +1,43 @@
-/* Text in the body */
-h1{
-    color:  #F28705;
-    font-size: 45px;
-    font-weight: bold;
-    text-align: center;
-    /* border-bottom:2px solid #F27507 ; */
+/* Style the container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
 }
-p{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 30px;
+#text-cart {
+  color: #034001;
+  text-align: center;
 }
-h2{
-    color:   #034001;
-    text-align: center;
-    font-size: 35px;
+
+h1,
+h2 {
+  margin: 0;
 }
-/* search icon */
-#search-section {
+.productContainer2{
+  display: flex;
+  justify-content: space-around;
+}
+#fruits{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: #034001;
+}
+.Containertwo{
+    display: flex;
+    justify-content: space-around;
+  }
+#vege{
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #034001;
+ }
+
+ #search-section {
   display: flex;
   align-items: center;
   max-width: 400px;
@@ -29,11 +49,10 @@ h2{
 #search-input {
   flex: 1;
   padding: 5px;
-  border: 2px solid #a85207;
+  border: 2px solid #A85207;
   outline: none;
   font-size: 16px;
 }
-
 #search-button {
   padding: 9px 11px;
   background-color:#a85207;
@@ -41,115 +60,100 @@ h2{
   border: none;
   cursor: pointer;
 }
-/* end of search icons */
-/* Vegetables layout */
-.vegetables{
-    display: flex;
-    justify-content: space-evenly;
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border: 2px solid red;
 }
-/* Vegetables layout two */
-.vegetables-raw-two{
-    display: flex;
-    justify-content: space-around;
-}
-h4{
-    text-align: center;
-    color: #a85207;
-    border-bottom:3px solid #a85207;
-}
-/* fruits layot one */
-.fruits{
-    display: flex;
-    justify-content: space-evenly;
-}
-#fruit-second{
-  display: flex;
-  justify-content: space-around;
-  padding-top: 40px;
-}
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-/* .bananaImage {
-  max-width: 100%;
-  width: 300px;
-  height: 300px;
-  /* opacity: 0.7; */
 
-.card {
-  box-shadow: 2px 0px 11px 0px rgba(0, 0, 0, 0.75);
-  width: 20%;
-  height: 40%;
-  border-radius: 7px;
-  padding: 10px;
-  transition: transform 0.2s;
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  width: 25%;
 }
-.card:hover {
-  transform: scale(1.1);
+
+.cart {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
 }
-.btn {
-  border: none;
-  color: #fff;
+
+.cart-items {
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.total {
   font-weight: bold;
-  padding: 10px;
-  border-radius: 7px;
-  cursor:pointer;
+}
+button {
+  /* padding-top: 40px; */
+  padding: 10px 20px;
+  background-color: #034001;
+  text-decoration: none;
+  color: #fff;
 }
 .orderBtn {
   background-color: #034001;
+  /* text-decoration: none; */
+  padding: 10px 20px;
   text-decoration: none;
+  color: #fff;
 }
 .cartBtn {
-  background-color:  #a75106;
+  background-color:  #A75106;
   text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
 }
 .btnContainer {
   display: flex;
   justify-content: space-between;
+  /* text-decoration: none; */
 }
-.footer {
-  min-height: 30vh;
-  background-color: #034001;
-}
-/* footer */
-/* Style the container */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Style the footer */
-footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.footer-section {
-  margin-bottom: 20px;
-}
-
-.footer-section h2 {
-  margin-bottom: 10px;
-}
-
-.footer-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-section li {
-  margin-bottom: 5px;
-}
-
-.footer-info {
-  text-align: center;
-  font-size: 14px;
-  color: #777;
-}
-.container-footer{
+/* .mainContainer{
   display: flex;
-  justify-content: space-around;
-  background-color: #034001;
-  color: whitesmoke;
+} */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productContainer2,
+  .Containertwo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #fruits,
+  #vege {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .search-section {
+    max-width: 100%;
+  }
+
+  #search-input {
+    width: 100%;
+  }
+
+  .btnContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
 }

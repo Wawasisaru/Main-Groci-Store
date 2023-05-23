@@ -31,16 +31,12 @@ nav{
  }
  a {
     text-decoration: none;
-    /* text-shadow: chartreuse;
-     */
      color:whitesmoke;
      font-size: 20px;
     text-align: left;
     padding-left: 20px;
     font-weight: bold;
  }
- /* End of navigation bar */
- /* Start of the homepage styling */
  #home{
     font-weight: bold;
     color: #CE5B13;
@@ -54,17 +50,6 @@ nav{
     margin-top: 5%;
     /* padding-top: 20%; */
  }
- /* Button section in home */
-/* .btnContainer{
-        /* padding: 18px 18px; */
-        /* border:3px;
-        border-radius: 10px;
-        font-size: 1.2rem;
-        text-align: center;
-        padding-top: 60px;
-        font-size: 20px;
-         */
-      /* }  */
  .btnContainer{
         border: 1px solid rgb(250, 142, 19); 
         color:whitesmoke;
@@ -83,10 +68,6 @@ nav{
         font-size: 20px; 
         border-radius: 10px;
 }
- 
-/* footer */
-  /* footer */
-  /* Style the container */
   .container {
     max-width: 800px;
     margin: 0 auto;
@@ -124,3 +105,30 @@ nav{
     color: whitesmoke;
     padding:30px;
   }
+  @media (max-width: 480px) {
+    #Groci {
+      font-size: 40px;
+      margin-bottom: 3%;
+      margin-top: 3%;
+    }
+  
+    .btnContainer,
+    .start {
+      padding: 12px 30px;
+      font-size: 16px;
+    }
+    
+    nav {
+      padding: 10px;
+    }
+    
+    nav ul li {
+      margin-left: 20px;
+    }
+    
+    a {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+  }
+  

@@ -84,10 +84,6 @@ h2 {
   /* cursor: pointer; */
   font-size: 17px;
 }
-
-/* /* .btn:hover {
-   */
-
 hr {
   border: 1px solid lightgrey;
 }
@@ -103,11 +99,42 @@ span.price {
 #paym {
   border: 120%;
 }
-@media (max-width: 800px) {
+/* Media Queries */
+
+@media (max-width: 768px) {
   .row {
-    flex-direction: column-reverse;
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
   }
-  .col-25 {
-    margin-bottom: 20px;
+
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0;
+  }
+
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .btn {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .container {
+    padding: 5px 10px 15px 10px;
   }
 }
