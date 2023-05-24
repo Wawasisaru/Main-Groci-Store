@@ -8,6 +8,20 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="sideNav">
+      <nav>
+          <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../Payment/pay/pay.html">Payment</a></li>
+              <li><a href="../products/product.html">Product</a></li>
+              <li><a href="../SignUp/signup.html">SignUp</a></li>
+          </ul>
+      </nav>
+  </div>
+  <div id="menuBtn">
+      <img src="../cart/Images/menu.png" id="menu">
+  </div>
+
     <h1 id="text-cart">My Shopping Cart</h1>
     <div class="mainContainer">
       <div class="productContainer">
@@ -75,5 +89,27 @@
         <a href="../Payment/pay/pay.html">Order Now</a>
       </div>
     </div>
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    sideNav.style.right = "-250px"
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "../cart/Images/close.png";
+        }
+        else{
+             sideNav.style.right = "-250px";
+             menu.src = "../cart/Images/menu.png" ;
+        }
+        // Add event listener to close the navigation when clicked
+  sideNav.addEventListener('click', function() {
+  sideNav.style.right = "-250px";
+  menu.src = "../cart/Images/close.png";
+});
+    }
+</script>
   </body>
 </html>

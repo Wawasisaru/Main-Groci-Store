@@ -9,25 +9,21 @@
   </head>
   <html>
     <body>
+      <section id="home">
       <div id="containermain">
-        <div id="navigation">
+        <div id="sideNav">
           <nav>
-            <ul>
-              <li>
-                <a href="store"><span id="home">GROCI STORE</span></a>
-              </li>
-            </ul>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">SignUp</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Payment</a></li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
+              <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="Payment/pay/pay.html">Payment</a></li>
+                  <li><a href="./products/product.html">Product</a></li>
+                  <li><a href="./SignUp/signup.html">SignUp</a></li>
+              </ul>
           </nav>
-        </div>
+      </div>
+      <div id="menuBtn">
+          <img src="./cart/Images/menu.png" id="menu">
+      </div>
         <div id="homepage">
           <h1 id="Groci">Welcome To Groci Store</h1>
           <!-- <a href="./login.html" class="btn2section">Sign Up</a> -->
@@ -72,6 +68,28 @@
         <p class="footer-info">&copy; 2023 Groci Store. All rights reserved.</p>
       </footer> -->
       <!-- footer -->
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    sideNav.style.right = "-250px"
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "./cart/Images/close.png";
+        }
+        else{
+             sideNav.style.right = "-250px";
+             menu.src = "./cart/Images/close.png" ;
+        }
+        // Add event listener to close the navigation when clicked
+  sideNav.addEventListener('click', function() {
+  sideNav.style.right = "-250px";
+  menu.src = "./cart/Images/close.png";
+});
+    }
+</script>
     </body>
   </html>
 </html>
