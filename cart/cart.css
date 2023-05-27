@@ -200,16 +200,16 @@ nav ul li a{
 .nav-barr {
   position: fixed;
   width: 100%;
-  height: 40%;
+  /* height: 40%; */
 }
 .nav img {
   width: 5em;
-  margin-left: 50em;
+  margin-left: 2em;
 }
 .nav {
   height: 50px;
   width: 100%;
-  background:#162401;
+  background: #034001;
   position: relative;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -220,7 +220,7 @@ nav ul li a{
 .nav>.nav-header>.nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #fff;
+  color: whitesmoke;
   padding: 10px 10px 10px 10px;
 }
 .nav>.nav-btn {
@@ -236,8 +236,7 @@ nav ul li a{
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color:whitesmoke;
-  font-size: 1.1em;
+  color: whitesmoke;
 }
 .nav>.nav-links>a:hover {
   color: #8BC746;
@@ -276,7 +275,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
      padding-left: 20px;
-    background-color: black;
+    background-color: #034001;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
@@ -293,7 +292,4 @@ nav ul li a{
     height: calc(25vh - 50px);
     overflow-y: auto;
   }
-} 
-  .nav>.nav-links {
-    position: absolute;
-  }
+}
