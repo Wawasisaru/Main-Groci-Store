@@ -8,19 +8,25 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="sideNav">
-      <nav>
-          <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../Payment/pay/pay.html">Payment</a></li>
-              <li><a href="../products/product.html">Product</a></li>
-              <li><a href="../SignUp/signup.html">SignUp</a></li>
-          </ul>
-      </nav>
-  </div>
-  <div id="menuBtn">
-      <img src="../cart/Images/menu.png" id="menu">
-  </div>
+    <div class="nav-barr">
+      <div class="nav">
+          <input type="checkbox" id="nav-check">
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <div class="nav-links">
+              <a href="#home">Home</a>
+              <a href="#shop">Shop</a>
+              <a href="#services">About</a>
+              <a href="#review">Review</a>
+              <a href="#contact">Contact</a>
+          </div>
+        </div>
+    </div>
 
     <h1 id="text-cart">My Shopping Cart</h1>
     <div class="mainContainer">
@@ -90,7 +96,7 @@
       </div>
     </div>
 
-  <script>
+  <!-- <script>
     var menuBtn = document.getElementById("menuBtn")
     var sideNav = document.getElementById("sideNav")
     var menu = document.getElementById("menu")
@@ -110,6 +116,6 @@
   menu.src = "../cart/Images/close.png";
 });
     }
-</script>
+</script> -->
   </body>
 </html>
