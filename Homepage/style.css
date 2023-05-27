@@ -74,9 +74,8 @@
     margin: 0 auto;
     padding: 20px;
   }
-  
   /* Style the footer */
-  footer {
+  /* footer {
     background-color: #f2f2f2;
   }
   
@@ -105,7 +104,7 @@
     background-color: #034001;
     color: whitesmoke;
     padding:30px;
-  }
+  } */
  @media (max-width: 480px) {
   #Groci {
     font-size: 40px;
@@ -119,7 +118,7 @@
     font-size: 16px;
   }
   
-  nav {
+  /* nav {
     padding: 10px;
   }
   
@@ -130,14 +129,14 @@
   a {
     font-size: 16px;
     padding-left: 10px;
-  }
+  } */
 }
 /*  */
-* {
+/* * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
+} */
 
 /* Navigation bar */
 body {
@@ -147,54 +146,19 @@ html{
   scroll-behavior: smooth;
 }
 
-#sideNav{
-  width: 250px;
-  height: 100vh;
-  position: fixed;
-  right: -250px;
-  top: 0;
-  background: #162401;
-  z-index: 2;
-  transition: 0.5s;
-}
-nav ul li{
-  list-style: none;
-  margin: 50px 20px;
-}
-nav ul li a{
-  text-decoration: none;
-  color: #fff;
-}
-#menuBtn{
-  width: 50px;
-  height: 50px;
-  background-color:#162401;
-  text-align: center;
-  position: fixed;
-  right: 30px;
-  top: 20px;
-  border-radius: 3px;
-  z-index: 3;
-  cursor: pointer;
-}
-#menuBtn img{
-  width: 20px;
-  margin-top: 15px;
-}
-
 .nav-barr {
   position: fixed;
   width: 100%;
-  height: 40%;
+  /* height: 40%; */
 }
 .nav img {
   width: 5em;
-  margin-left: 50em;
+  margin-left: 2em;
 }
 .nav {
   height: 50px;
   width: 100%;
-  background:#162401;
+  background: #2F4E00;
   position: relative;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -205,7 +169,7 @@ nav ul li a{
 .nav>.nav-header>.nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #fff;
+  color: whitesmoke;
   padding: 10px 10px 10px 10px;
 }
 .nav>.nav-btn {
@@ -221,8 +185,7 @@ nav ul li a{
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color:whitesmoke;
-  font-size: 1.1em;
+  color: whitesmoke;
 }
 .nav>.nav-links>a:hover {
   color: #8BC746;
@@ -261,7 +224,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
      padding-left: 20px;
-    background-color: black;
+    background-color: #F3EDD4;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
@@ -278,7 +241,4 @@ nav ul li a{
     height: calc(25vh - 50px);
     overflow-y: auto;
   }
-} 
-  .nav>.nav-links {
-    position: absolute;
-  }
+}
