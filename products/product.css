@@ -1,3 +1,8 @@
+*{
+  margin:0;
+  padding:0;
+}
+
 /* Style the container */
 .container {
   max-width: 800px;
@@ -208,7 +213,7 @@ button {
 .nav {
   height: 50px;
   width: 100%;
-  background: #034001;
+  background: #2F4E00;
   position: relative;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -253,7 +258,7 @@ button {
   .nav>.nav-btn>label {
     display: inline-block;
     width: 50px;
-    height: 50px;
+    height: 23px;
     padding: 13px;
   }
   .nav>.nav-btn>label:hover,
@@ -274,21 +279,23 @@ button {
     justify-content: center;
     align-items: center;
      padding-left: 20px;
-    background-color: #034001;
+    background-color: #2F4E00;
     transition: all 0.3s ease-in;
-    overflow-y: hidden;
     top: 50px;
     left: 0px;
   }
   .nav>.nav-links>a {
-    display: block;
     width: 100%;
   }
   .nav>#nav-check:not(:checked)~.nav-links {
-    height: 0px;
+    height: 0vh;
+    background-color: #2F4E00;
   }
+  .nav>#nav-check:not(:checked)~.nav-links > a{
+    visibility: hidden;
+  }
+  
   .nav>#nav-check:checked~.nav-links {
-    height: calc(25vh - 50px);
-    overflow-y: auto;
+    height: calc(60vh - 0px);
   }
 }

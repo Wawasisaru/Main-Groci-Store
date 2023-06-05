@@ -203,7 +203,7 @@ html{
   .nav>.nav-btn>label {
     display: inline-block;
     width: 50px;
-    height: 50px;
+    height: 23px;
     padding: 13px;
   }
   .nav>.nav-btn>label:hover,
@@ -226,19 +226,21 @@ html{
      padding-left: 20px;
     background-color: #2F4E00;
     transition: all 0.3s ease-in;
-    overflow-y: hidden;
     top: 50px;
     left: 0px;
   }
   .nav>.nav-links>a {
-    display: block;
     width: 100%;
   }
   .nav>#nav-check:not(:checked)~.nav-links {
-    height: 0px;
+    height: 0vh;
+    background-color: #2F4E00;
   }
+  .nav>#nav-check:not(:checked)~.nav-links > a{
+    visibility: hidden;
+  }
+  
   .nav>#nav-check:checked~.nav-links {
-    height: calc(25vh - 50px);
-    overflow-y: auto;
+    height: calc(60vh - 0px);
   }
 }
